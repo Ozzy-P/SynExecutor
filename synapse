@@ -1,1 +1,217 @@
+local SynapseX = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Hub = Instance.new("Frame")
+local Lines = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local Tab = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UIPadding_2 = Instance.new("UIPadding")
+local Exec = Instance.new("TextBox")
+local UIPadding_3 = Instance.new("UIPadding")
+local Title = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local UIPadding_4 = Instance.new("UIPadding")
+local M = Instance.new("TextButton")
+local UIPadding_5 = Instance.new("UIPadding")
+local _ = Instance.new("TextButton")
+local UIPadding_6 = Instance.new("UIPadding")
 
+--Properties:
+
+SynapseX.Name = "Synapse X"
+SynapseX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = SynapseX
+Main.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Main.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.200331151, 0, 0.471752048, 0)
+Main.Size = UDim2.new(0.292218506, 0, 0.267813921, 0)
+Main.Draggable = true
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.122137405, 0)
+Frame.Size = UDim2.new(1, 0, 0.877862573, 0)
+
+Hub.Name = "Hub"
+Hub.Parent = Frame
+Hub.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Hub.BorderSizePixel = 0
+Hub.Position = UDim2.new(0.864238381, 0, 0.0260869563, 0)
+Hub.Size = UDim2.new(0.125827819, 0, 0.817130446, 0)
+
+Lines.Name = "Lines"
+Lines.Parent = Frame
+Lines.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Lines.BorderSizePixel = 0
+Lines.Position = UDim2.new(0.00999999978, 0, 0.108999997, 0)
+Lines.Size = UDim2.new(0.0460000001, 0, 0.734000027, 0)
+Lines.Font = Enum.Font.Roboto
+Lines.Text = "1\n2\n3\n4"
+Lines.TextColor3 = Color3.fromRGB(68, 68, 68)
+Lines.TextSize = 14.000
+Lines.TextWrapped = true
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding.Parent = Lines
+UIPadding.PaddingBottom = UDim.new(0.0199999996, 0)
+UIPadding.PaddingLeft = UDim.new(0.0199999996, 0)
+UIPadding.PaddingRight = UDim.new(0.0199999996, 0)
+UIPadding.PaddingTop = UDim.new(0.0199999996, 0)
+
+Tab.Name = "Tab"
+Tab.Parent = Frame
+Tab.BackgroundColor3 = Color3.fromRGB(105, 105, 105)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.00993380044, 0, 0.0260869563, 0)
+Tab.Size = UDim2.new(0.0930132866, 0, 0.0818261206, 0)
+
+TextLabel.Parent = Tab
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0711996853, 0, 0.159404814, 0)
+TextLabel.Size = UDim2.new(0.850000024, 0, 0.850000024, 0)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.Text = "Script 1"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0165562909, 0, 0.869304359, 0)
+Execute.Size = UDim2.new(0.124311261, 0, 0.104217269, 0)
+Execute.Font = Enum.Font.Roboto
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+UIPadding_2.Parent = Execute
+UIPadding_2.PaddingBottom = UDim.new(0.100000001, 0)
+UIPadding_2.PaddingLeft = UDim.new(0.150000006, 0)
+UIPadding_2.PaddingRight = UDim.new(0.150000006, 0)
+UIPadding_2.PaddingTop = UDim.new(0.100000001, 0)
+
+Exec.Name = "Exec"
+Exec.Parent = Frame
+Exec.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Exec.BorderSizePixel = 0
+Exec.Position = UDim2.new(0.0560000017, 0, 0.108999997, 0)
+Exec.Size = UDim2.new(0.795000017, 0, 0.734000027, 0)
+Exec.ClearTextOnFocus = false
+Exec.Font = Enum.Font.Roboto
+Exec.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Exec.Text = "syn.set_threat_identity(2)"
+Exec.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exec.TextSize = 14.000
+Exec.TextWrapped = true
+Exec.TextXAlignment = Enum.TextXAlignment.Left
+Exec.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_3.Parent = Exec
+UIPadding_3.PaddingBottom = UDim.new(0.0199999996, 0)
+UIPadding_3.PaddingLeft = UDim.new(0.0199999996, 0)
+UIPadding_3.PaddingRight = UDim.new(0.0199999996, 0)
+UIPadding_3.PaddingTop = UDim.new(0.0199999996, 0)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.5, 0, 0.0500000007, 0)
+Title.Size = UDim2.new(0.291390717, 0, 0.0535725616, 0)
+Title.Font = Enum.Font.Roboto
+Title.Text = "Synapse X - v2.23.7b"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Main
+X.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.962643206, 0, 0, 0)
+X.Size = UDim2.new(0.0373547003, 0, 0.0767862573, 0)
+X.Font = Enum.Font.Roboto
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+UIPadding_4.Parent = X
+UIPadding_4.PaddingBottom = UDim.new(0.100000001, 0)
+UIPadding_4.PaddingLeft = UDim.new(0.150000006, 0)
+UIPadding_4.PaddingRight = UDim.new(0.150000006, 0)
+UIPadding_4.PaddingTop = UDim.new(0.200000003, 0)
+
+M.Name = "M"
+M.Parent = Main
+M.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+M.BorderSizePixel = 0
+M.Position = UDim2.new(0.924382329, 0, 0, 0)
+M.Size = UDim2.new(0.0373547003, 0, 0.0767862573, 0)
+M.Font = Enum.Font.Roboto
+M.Text = "M"
+M.TextColor3 = Color3.fromRGB(255, 255, 255)
+M.TextScaled = true
+M.TextSize = 14.000
+M.TextWrapped = true
+
+UIPadding_5.Parent = M
+UIPadding_5.PaddingBottom = UDim.new(0.100000001, 0)
+UIPadding_5.PaddingLeft = UDim.new(0.150000006, 0)
+UIPadding_5.PaddingRight = UDim.new(0.150000006, 0)
+UIPadding_5.PaddingTop = UDim.new(0.200000003, 0)
+
+_.Name = "_"
+_.Parent = Main
+_.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+_.BorderSizePixel = 0
+_.Position = UDim2.new(0.886121452, 0, 0, 0)
+_.Size = UDim2.new(0.0373547003, 0, 0.0767862573, 0)
+_.Font = Enum.Font.Roboto
+_.Text = "_"
+_.TextColor3 = Color3.fromRGB(255, 255, 255)
+_.TextScaled = true
+_.TextSize = 14.000
+_.TextWrapped = true
+
+UIPadding_6.Parent = _
+UIPadding_6.PaddingBottom = UDim.new(0.100000001, 0)
+UIPadding_6.PaddingLeft = UDim.new(0.150000006, 0)
+UIPadding_6.PaddingRight = UDim.new(0.150000006, 0)
+UIPadding_6.PaddingTop = UDim.new(0.200000003, 0)
+
+-- Scripts:
+
+local function KYURJOK_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local Synapse = script.Parent.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.Exec.Text)()
+	end)
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(x,observable)
+		if observable then return end
+		if x.KeyCode == Enum.KeyCode.L then
+			Synapse.Enabled = not Synapse.Enabled
+		end
+	end)
+end
+coroutine.wrap(KYURJOK_fake_script)()
